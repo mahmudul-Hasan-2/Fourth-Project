@@ -1,4 +1,4 @@
-# 🚀 Tonmoy's Pricing UI
+# 🚀 Nirab's Pricing UI
 
 This is a premium pricing section built with React and Tailwind CSS.
 
