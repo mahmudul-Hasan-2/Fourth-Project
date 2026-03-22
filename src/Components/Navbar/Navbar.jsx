@@ -1,5 +1,5 @@
-import { MenuIcon, Moon, Sun, X } from 'lucide-react';
-import React, { useEffect, useState } from 'react';
+import { MenuIcon, X } from 'lucide-react';
+import React, { useState } from 'react';
 
 const navItems = [
     { id: 1, name: "Home", path: "/" },
@@ -14,22 +14,6 @@ const Navbar = () => {
     const items = navItems.map(navs => <a key={navs.id} href={navs.path} className='font-bold'>{navs.name}</a>)
 
     const [active, setActive] = useState(false);
-    const [light, setLight] = useState(true);
-
-    // তোর কম্পোনেন্টের ভেতরে
-    useEffect(() => {
-        if (light) {
-            document.body.style.minHeight = "100vh";
-            document.body.style.backgroundColor = "white";
-            document.body.style.color = "black";
-            document.body.style.transition = "1s ease-in-out";
-        } else {
-            document.body.style.minHeight = "100vh";
-            document.body.style.backgroundColor = "black";
-            document.body.style.color = "white";
-            document.body.style.transition = "1s ease-in-out";
-        }
-    }, [light]); // যখনই light স্টেট চেঞ্জ হবে, এটা রান করবে
 
     return (
         <nav className='flex items-center pt-4 justify-between max-w-7xl mx-auto w-11/12'>
@@ -48,7 +32,7 @@ const Navbar = () => {
                 }
             </div>
             <div>
-                <button className='cursor-pointer' onClick={() => setLight(!light)}>{light ? <Moon></Moon> : <Sun></Sun>}</button>
+                <button className='btn btn-primary'>Login</button>
             </div>
         </nav >
     );
