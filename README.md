@@ -27,4 +27,4 @@ This is a premium pricing section built with React and Tailwind CSS.
 * **Responsive:** Works on all devices.
 
 ---
-Made with ❤️ by Tonmoy
+Made with ❤️ by Nirab
