@@ -17,7 +17,7 @@ This is a premium pricing section built with React and Tailwind CSS.
 ---
 
 ### 🛠️ How to Setup
-1. Clone the project: `git clone https://github.com/your-username/repo.git`
+1. Clone the project: `git clone https://github.com/mahmudul-Hasan-2/Fourth-Project.git`
 2. Install dependencies: `npm install`
 3. Start the project: `npm run dev`
 
