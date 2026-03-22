@@ -1,0 +1,41 @@
+import { MenuIcon, X } from 'lucide-react';
+import React, { useState } from 'react';
+
+const navItems = [
+    { id: 1, name: "Home", path: "/" },
+    { id: 2, name: "About", path: "/about" },
+    { id: 3, name: "Services", path: "/services" },
+    { id: 4, name: "Portfolio", path: "/portfolio" },
+    { id: 5, name: "Contact", path: "/contact" }
+];
+
+const Navbar = () => {
+
+    const items = navItems.map(navs => <a key={navs.id} href={navs.path} className='font-bold'>{navs.name}</a>)
+
+    const [active, setActive] = useState(false);
+
+    return (
+        <nav className='flex items-center mt-3 justify-between max-w-7xl mx-auto w-11/12'>
+            <div>
+                <div className='flex items-center gap-2 relative'>
+                    <div className={`flex flex-col gap-2 ${active ? 'top-8' : '-top-60'} bg-amber-500 p-5 rounded-2xl absolute md:hidden duration-1000`}>
+                        {items}
+                    </div>
+                    <button onClick={() => setActive(!active)} className='md:hidden block'>{active ? <X></X> : <MenuIcon></MenuIcon>}</button>
+                    <a href='/' className='font-bold text-xl lg:text-2xl'>Ton<span className='text-blue-500'>moy</span></a>
+                </div>
+            </div>
+            <div className='md:flex hidden items-center gap-4'>
+                {
+                    items
+                }
+            </div>
+            <div>
+                <button className='btn btn-primary'>Login</button>
+            </div>
+        </nav >
+    );
+};
+
+export default Navbar;
