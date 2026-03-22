@@ -54,10 +54,16 @@ const pricingPlans = [
 
 const Cards = () => {
     return (
-        <div>
-            {
-                pricingPlans.map(pricingPlan => <Card key={pricingPlan.id} pricingPlan={pricingPlan}></Card>)
-            }
+        <div className='max-w-7xl mx-auto w-11/12 my-10'>
+            <div className='text-center'>
+                <h2 className='text-2xl font-bold'>Pricing That Works for You</h2>
+                <p className='font-semibold text-gray-500'>Transparent and affordable plans built to deliver maximum value for individuals and teams.</p>
+            </div>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-5 gap-5'>
+                {
+                    pricingPlans.map(pricingPlan => <Card key={pricingPlan.id} pricingPlan={pricingPlan}></Card>)
+                }
+            </div>
         </div>
     );
 };

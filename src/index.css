@@ -1,0 +1,9 @@
+/* index.css ফাইলে গিয়ে এটা বসিয়ে দে */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: white;
+    /* বাই ডিফল্ট কালো রাখবি */
+}
