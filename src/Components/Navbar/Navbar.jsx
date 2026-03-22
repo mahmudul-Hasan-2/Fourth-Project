@@ -38,7 +38,7 @@ const Navbar = () => {
                     <div className={`flex flex-col gap-2 ${active ? 'top-8 z-10' : '-top-60'} bg-white/10 backdrop-blur-md border border-white/20 p-5 rounded-2xl absolute md:hidden duration-1000`}>
                         {items}
                     </div>
-                    <button onClick={() => setActive(!active)} className='md:hidden block'>{active ? <X></X> : <MenuIcon></MenuIcon>}</button>
+                    <button onClick={() => setActive(!active)} className='md:hidden block cursor-pointer'>{active ? <X></X> : <MenuIcon></MenuIcon>}</button>
                     <a href='/' className='font-bold text-xl lg:text-2xl'>Ton<span className='text-blue-500'>moy</span></a>
                 </div>
             </div>
