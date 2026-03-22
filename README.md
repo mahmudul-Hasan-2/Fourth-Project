@@ -4,7 +4,7 @@ This is a premium pricing section built with React and Tailwind CSS.
 
 ---
 
-🔗 **Live Demo:** [https://your-surge-link.surge.sh](https://your-surge-link.surge.sh)
+🔗 **Live Demo:** [https://sparkling-sense.surge.sh/](https://sparkling-sense.surge.sh/)
 
 ---
 
