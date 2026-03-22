@@ -4,7 +4,7 @@ This is a premium pricing section built with React and Tailwind CSS.
 
 ---
 
-🔗 **Live Demo:** [https://abject-control.surge.sh](https://abject-control.surge.sh)
+🔗 **Live Demo:** [embarrassed-sofa.surge.sh](embarrassed-sofa.surge.sh)
 
 ---
 
